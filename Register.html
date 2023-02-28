@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <style>
+		body
+		{
+            background-image: url('./image/prova3.jpg');
+            background-size: 1500px 700px;
+			padding: 0px;
+			font-family: sans-serif;
+		}
+        .topright {
+            position: absolute;
+            top: 160px;
+            right: 80px;
+            font-size: 16px;
+        }
+        .topleft {
+            position: absolute;
+            top: 160px;
+            left: 80px;
+            font-size: 16px;
+        }
+        button
+        {
+            text-align: center;
+            padding: 20px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 15px;
+            background-color: whitesmoke;
+            box-shadow: 0px 10px grey;
+            margin: 10px;
+        }
+        button:active 
+        {
+            box-shadow: 0px 4px grey;
+        }
+	</style>
+</head>
+<body>
+    <form action="https://www.zara.com/al/sq/signup">
+            <h3 align="center" style="color:white">Enter your credentials: </h3>
+            <br>
+            <br>
+            <br>
+        <div class="topleft">
+            <label for="firstName" style="color:white">First Name</label>
+            <input id="firstName" type="text" name="firstName" style="color:gray" required>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="lastName" style="color:white">Last Name</label>
+            <input id="lastName" type="text" name="lastName" required>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="gender" style="color:white" >Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="year" style="color:white" >Year</label>
+            <input id="year" type="number" name="year" required min="1">
+
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="topright">
+            <label for="email" style="color:white" >Email</label>
+            <input id="email" type="email" name="email" placeholder="namesurname@gmail.com" required pattern="[a-zA-Z0-9]+@gmail.com">
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="username" style="color:white" > Username</label>
+            <input id="username" type="text" name="username" required>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="password" style="color:white" >Password</label>
+            <input id="password" type="password" name="password" required>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button type="submit" value="Submit">Sign Up</button>
+            <button type="reset" value="Reset">Reset</button>
+
+        </div>
+    </form>
+</body>
+</html>

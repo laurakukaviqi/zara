@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title> Log in </title>
+	<style>
+		body{
+            background-image: url('./image/REGISTER2.jpeg');
+            background-size: 700px 400px;
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+		}
+		.loginbox
+		{
+			width: 320px;
+			height: 420px;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			color: white;
+			box-sizing: border-box;
+			transform: translate(-50%,-50%);
+			padding: 70px 30px;
+		}
+		.avatar
+		{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			left: 100px;
+			top: -50px;
+			position: absolute;
+		}
+		.loginbox p
+		{
+			margin: 0;
+			padding: 0;
+			font-style: bold;
+		}
+		.loginbox input
+		{
+			width: 100%;
+			margin-bottom: 10%;
+		}
+        
+		.submit
+		{
+			margin-top: 20px;
+			padding: 0;
+			width: 100px;
+			height: 30px;
+			font-size: 24px;
+			background-color: white;
+			color: white;
+			position: absolute;
+			left: 100px;
+			border-radius: 50%;
+            border-bottom-color: coral
+		}
+		button
+        {
+            text-align: center;
+            padding: 20px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 15px;
+            background-color: whitesmoke;
+            box-shadow: 0px 10px grey;
+            margin: 10px;
+        }
+        button:active 
+        {
+            box-shadow: 0px 4px grey;
+			border: 20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="loginbox">
+		<h1 align="center" style="font-size: 40px" > Login Here </h1>
+		<form action="https://www.zara.com/al/sq/logon">
+			<label for="email" style="color:white" >Email</label>
+            <input id="email" type="email" name="email" placeholder="namesurname@gmail.com" required pattern="[a-zA-Z0-9]+@gmail.com">
+			
+            <label for="password" style="color:white" >Password</label>
+            <input id="password" type="password" name="password" required>
+
+			<button align="center" type="submit" value="Submit">Log In</button>
+		
+		</form>
+	</div>
+</body>
+</html>
